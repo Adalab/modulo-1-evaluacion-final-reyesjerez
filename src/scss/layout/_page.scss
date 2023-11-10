@@ -1,89 +1,171 @@
 .hero {
-    height: 100vh;
-    overflow: hidden;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-img {
-    height: fit-content;
-    width: fit-content;
-    z-index: -99;
-    text-align: center;
+  height: fit-content;
+  width: fit-content;
 }
 
 .hero-content {
-    color: $main-color;
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
+  color: $main-color;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero-title {
-    font-family: $title-font;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 4.2rem;
-    line-height: 1.2;
+  font-family: $title-font;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 4.2rem;
+  line-height: 1.2;
 }
 
 .hero-text {
-    font-family: $main-font;
-    text-align: center;
-    font-size: 1.6rem;
-    padding-top: 20px;
-    padding-bottom: 45px;
+  font-family: $main-font;
+  text-align: center;
+  font-size: 1.6rem;
+  padding-top: 20px;
+  padding-bottom: 45px;
 }
 
 .button {
-    width: 45px;
-    height: 45px;
-    border-radius:  50%;
-    background-color: $main-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tips {
-    padding: 30px 15px;
+  padding: 30px 15px;
 }
 
 .article__section {
-    font-family: $main-font;
-    font-size: 1.4rem;
-    color: $section-color;
-    padding: 10px 0px;
+  font-family: $main-font;
+  font-size: 1.4rem;
+  color: $section-color;
+  padding: 10px 0px;
 }
 
 .article__title {
-    font-family: $title-font;
-    font-size: 2.4rem;
-    line-height: 1.3;
+  font-family: $title-font;
+  font-size: 2.4rem;
+  line-height: 1.3;
 }
 
 .article__content {
-    font-family: $main-font;
-    font-size: 1.8rem;
-    line-height: 1.6;
-    color: $article-color;
-    padding: 20px 0px 30px 0px;
+  font-family: $main-font;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: $article-color;
+  padding: 20px 0px 30px 0px;
 }
 
 .go {
-    width: 76px;
-    height: 45px;
-    display: inline-block;
-    border: solid 2px $secondary-color;
-    border-radius: 22.5px;
-    text-decoration: none;
-    color: $secondary-color;
+  width: 76px;
+  height: 45px;
+  display: inline-block;
+  border: solid 2px $secondary-color;
+  border-radius: 22.5px;
+  text-decoration: none;
+  color: $secondary-color;
+  text-align: center;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 4.3rem;
+  &:hover{
+    background-color: $secondary-color;
+    color: $main-color;
+  }
+}
+
+.reasons {
+  width: 100vw;
+  padding: 0 20vw;
+  background-color: $bg-color;
+  display: grid;
+  grid-template-rows: 60px 1fr 1fr 1fr 45px;
+  gap: 45px;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  &__title {
     text-align: center;
+    font-size: 2.4rem;
+    font-family: $title-font;
+  }
+}
+
+.reason {
+  &__title {
+    font-family: $title-font;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  &__text {
     font-family: $main-font;
+    font-size: 1.8rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+}
+
+.more_reasons {
+  width: 184px;
+  height: 45px;
+  display: inline-block;
+  border-radius: 22.5px;
+  text-decoration: none;
+  background-color: $secondary-color;
+  color: $main-color;
+  text-align: center;
+  font-family: $main-font;
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 4.3rem;
+  transform: translateX(calc(30vw - 92px));
+  &:hover{
+    border: solid 2px $secondary-color;
+    background-color: $main-color;
+    color: $secondary-color;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 8rem;
+    line-height: 10.6rem;
+  }
+  .hero-text {
+    font-size: 2.4rem;
+  }
+  .article__title {
+    font-family: $title-font;
+    font-size: 2.6rem;
+    line-height: 4.5rem;
+  }
+  .article__content {
     font-size: 2rem;
-    line-height: 4.3rem;
+    line-height: 1.5;
+  }
+  .go {
+    width: 91px;
+  }
+}
+
+@media (min-width: 1280px){
+
 }

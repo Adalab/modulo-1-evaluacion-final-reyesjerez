@@ -1,2 +1,65 @@
-.page__footer {
+.footer {
+  background-color: $footer-color;
+}
+
+.footer_button {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(calc(50vw - 50%), -50%);
+    
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 45px;
+}
+
+.sections {
+  display: flex;
+}
+.menu__item {
+  font-family: $main-font;
+  font-size: 1.6rem;
+  color: $main-color;
+  list-style: none;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 30px;
+}
+
+.copy {
+  font-family: $main-font;
+  font-size: 1.4rem;
+  color: $main-color;
+  display: inline;    
+  &--heart {
+    font-family: $main-font;
+    font-size: 1.4rem;
+    color: $secondary-color;
+    display: inline;    
   }
+  &--year {
+      font-family: $main-font;
+      font-size: 1.4rem;
+      text-align: center;
+      color: $main-color;  
+  }
+}
+
+@media (min-width: 768px) {
+
+
+}
+
+@media (min-width: 1280px) {
+
+
+}
