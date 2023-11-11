@@ -36,10 +36,12 @@
 }
 
 .copy {
+  &--text {
   font-family: $main-font;
   font-size: 1.4rem;
   color: $main-color;
-  display: inline;    
+  display: inline;
+  }     
   &--heart {
     font-family: $main-font;
     font-size: 1.4rem;
@@ -55,11 +57,26 @@
 }
 
 @media (min-width: 768px) {
-
-
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0px 39px 45px 39px;
+  }
+  .menu__item {
+    font-family: $main-font;
+    text-align: left;
+  }
+  .copy {
+    order: -1;
+    &--year {
+        text-align: left;
+    }
+  }
 }
 
 @media (min-width: 1280px) {
-
-
+  .container {
+    padding: 0px 370px 45px 370px;
+  }
 }
