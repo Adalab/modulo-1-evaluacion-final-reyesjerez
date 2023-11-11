@@ -13,7 +13,6 @@
 .hero-content {
   color: $main-color;
   height: 100vh;
-  width: 100vw;
   position: absolute;
   top: 15%;
   display: flex;
@@ -93,7 +92,6 @@
 }
 
 .reasons {
-  width: 100vw;
   padding: 0 20vw;
   background-color: $bg-color;
   display: grid;
