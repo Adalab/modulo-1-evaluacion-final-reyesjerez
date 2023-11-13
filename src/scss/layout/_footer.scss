@@ -26,13 +26,16 @@
   display: flex;
   &__menu {
   list-style: none;
+  text-align: center;
 }
 }
 
-.social_menu {
+.social {
   &__menu {
     list-style: none;
+    text-align: center;
   }
+  
 }
 
 .menu__item {
@@ -41,7 +44,6 @@
   color: $main-color;
   list-style: none;
   text-transform: uppercase;
-  text-align: center;
   line-height: 30px;
   text-decoration: none;
 }
@@ -83,6 +85,14 @@
     order: -1;
     &--year {
         text-align: left;
+    }
+  }
+  .sections {
+    text-align: left;
+  }
+  .social {
+    &__menu {
+      text-align: left;
     }
   }
 }
