@@ -24,7 +24,17 @@
 
 .sections {
   display: flex;
+  &__menu {
+  list-style: none;
 }
+}
+
+.social_menu {
+  &__menu {
+    list-style: none;
+  }
+}
+
 .menu__item {
   font-family: $main-font;
   font-size: 1.6rem;
@@ -33,6 +43,7 @@
   text-transform: uppercase;
   text-align: center;
   line-height: 30px;
+  text-decoration: none;
 }
 
 .copy {
@@ -66,6 +77,7 @@
   .menu__item {
     font-family: $main-font;
     text-align: left;
+  
   }
   .copy {
     order: -1;
