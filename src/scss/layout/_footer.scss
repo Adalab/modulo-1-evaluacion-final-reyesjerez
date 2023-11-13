@@ -3,15 +3,14 @@
 }
 
 .footer_button {
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: $main-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(calc(50vw - 50%), -50%);
-    
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: $main-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(calc(50vw - 50%), -50%);
 }
 
 .container {
@@ -25,9 +24,9 @@
 .sections {
   display: flex;
   &__menu {
-  list-style: none;
-  text-align: center;
-}
+    list-style: none;
+    text-align: center;
+  }
 }
 
 .social {
@@ -35,7 +34,6 @@
     list-style: none;
     text-align: center;
   }
-  
 }
 
 .menu__item {
@@ -50,22 +48,22 @@
 
 .copy {
   &--text {
-  font-family: $main-font;
-  font-size: 1.4rem;
-  color: $main-color;
-  display: inline;
-  }     
+    font-family: $main-font;
+    font-size: 1.4rem;
+    color: $main-color;
+    display: inline;
+  }
   &--heart {
     font-family: $main-font;
     font-size: 1.4rem;
     color: $secondary-color;
-    display: inline;    
+    display: inline;
   }
   &--year {
-      font-family: $main-font;
-      font-size: 1.4rem;
-      text-align: center;
-      color: $main-color;  
+    font-family: $main-font;
+    font-size: 1.4rem;
+    text-align: center;
+    color: $main-color;
   }
 }
 
@@ -79,16 +77,17 @@
   .menu__item {
     font-family: $main-font;
     text-align: left;
-  
   }
   .copy {
     order: -1;
     &--year {
-        text-align: left;
+      text-align: left;
     }
   }
   .sections {
-    text-align: left;
+    &__menu {
+      text-align: left;
+    }
   }
   .social {
     &__menu {
